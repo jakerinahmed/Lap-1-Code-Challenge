@@ -3,6 +3,10 @@
     src: URL('ProductSansRegular.ttf') format('truetype');
   }
 
+  .google {
+    font-family: ProductSans;
+  }
+
 .index {
     width: 500px;
     margin: 0 auto;
@@ -14,7 +18,11 @@
     width: 500px;
     margin-top: 150px;
     font-size: 60px;
-    font-family: ProductSans;
+}
+
+.resultsHeader {
+    margin: 30px;
+    margin-bottom: 50px;
 }
 
 .barStyle {
@@ -24,6 +32,21 @@
     border-radius: 15px;
     border: 1px solid #bbb;
     font-size: 15px;
+}
+
+hr {
+    opacity: 0.5;
+}
+
+#searchResults {
+    list-style-type: none;
+    margin: 50px;
+    margin-left: 100px;
+}
+
+li {
+    padding: 20px;
+    font-size: 20px;
 }
 
 .buttonStyle {
