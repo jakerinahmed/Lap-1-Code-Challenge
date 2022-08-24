@@ -46,16 +46,16 @@ app.get("/movies/:id", (req, res) => {
 
 
 tvShow = [
-    { id: 1, title: "Game Of Thrones", link: "https://en.wikipedia.org/wiki/Game_of_Thrones" },
-    { id: 2, title: "Breaking Bad", link: "https://en.wikipedia.org/wiki/Breaking_Bad"},
-    { id: 3, title: "The Boys", link:"https://en.wikipedia.org/wiki/The_Boys_(TV_series)" },
-    { id: 4, title: "Stranger Things", link: "https://en.wikipedia.org/wiki/Stranger_Things" },
-    { id: 5, title: "Better Call Saul", link: "https://en.wikipedia.org/wiki/Better_Call_Saul" },
-    { id: 6, title: "Peaky Blinders", link: "https://en.wikipedia.org/wiki/Peaky_Blinders_(TV_series)"},
-    { id: 7, title: "Severance", link:"https://en.wikipedia.org/wiki/Severance_(TV_series)"},
-    { id: 8, title: "Modern Family", link: "https://en.wikipedia.org/wiki/Modern_Family"},
-    { id: 9, title: "Friends", link: "https://en.wikipedia.org/wiki/Friends" },
-    { id: 10, title: "Rick and Morty", link: "https://en.wikipedia.org/wiki/Rick_and_Morty" }
+    { id: 11, title: "Game Of Thrones", link: "https://en.wikipedia.org/wiki/Game_of_Thrones" },
+    { id: 12, title: "Breaking Bad", link: "https://en.wikipedia.org/wiki/Breaking_Bad"},
+    { id: 13, title: "The Boys", link:"https://en.wikipedia.org/wiki/The_Boys_(TV_series)" },
+    { id: 14, title: "Stranger Things", link: "https://en.wikipedia.org/wiki/Stranger_Things" },
+    { id: 15, title: "Better Call Saul", link: "https://en.wikipedia.org/wiki/Better_Call_Saul" },
+    { id: 16, title: "Peaky Blinders", link: "https://en.wikipedia.org/wiki/Peaky_Blinders_(TV_series)"},
+    { id: 17, title: "Severance", link:"https://en.wikipedia.org/wiki/Severance_(TV_series)"},
+    { id: 18, title: "Modern Family", link: "https://en.wikipedia.org/wiki/Modern_Family"},
+    { id: 19, title: "Friends", link: "https://en.wikipedia.org/wiki/Friends" },
+    { id: 20, title: "Rick and Morty", link: "https://en.wikipedia.org/wiki/Rick_and_Morty" }
 ]
 
 app.get("/tv-shows", (req, res) => {
@@ -84,16 +84,16 @@ app.get("/tv-shows/:id", (req, res) => {
 
 
 videoGames = [
-    { id: 1, title: "Call Of Duty: Black Ops", link:"https://en.wikipedia.org/wiki/Call_of_Duty:_Black_Ops" },
-    { id: 2, title: "Call Of Duty: Black Ops II", link: "https://en.wikipedia.org/wiki/Call_of_Duty:_Black_Ops_II"},
-    { id: 3, title: "Call Of Duty: Black Ops III", link: "https://en.wikipedia.org/wiki/Call_of_Duty:_Black_Ops_III"},
-    { id: 4, title: "Call Of Duty: Black Ops IV", link:"https://en.wikipedia.org/wiki/Call_of_Duty:_Black_Ops_4" },
-    { id: 5, title: "Elden Ring", link:"https://en.wikipedia.org/wiki/Elden_Ring" },
-    { id: 6, title: "Sekiro: Shadows Die Twice", link:"https://en.wikipedia.org/wiki/Sekiro:_Shadows_Die_Twice" },
-    { id: 7, title: "Dark Souls", link:"https://en.wikipedia.org/wiki/Dark_Souls_(video_game)"},
-    { id: 8, title: "Dark Souls II", link: "https://en.wikipedia.org/wiki/Dark_Souls_II"},
-    { id: 9, title: "Dark Souls III", link: "https://en.wikipedia.org/wiki/Dark_Souls_III"},
-    { id: 10, title: "Minecraft", link: "https://en.wikipedia.org/wiki/Minecraft"}
+    { id: 21, title: "Call Of Duty: Black Ops", link:"https://en.wikipedia.org/wiki/Call_of_Duty:_Black_Ops" },
+    { id: 22, title: "Call Of Duty: Black Ops II", link: "https://en.wikipedia.org/wiki/Call_of_Duty:_Black_Ops_II"},
+    { id: 23, title: "Call Of Duty: Black Ops III", link: "https://en.wikipedia.org/wiki/Call_of_Duty:_Black_Ops_III"},
+    { id: 24, title: "Call Of Duty: Black Ops IV", link:"https://en.wikipedia.org/wiki/Call_of_Duty:_Black_Ops_4" },
+    { id: 25, title: "Elden Ring", link:"https://en.wikipedia.org/wiki/Elden_Ring" },
+    { id: 26, title: "Sekiro: Shadows Die Twice", link:"https://en.wikipedia.org/wiki/Sekiro:_Shadows_Die_Twice" },
+    { id: 27, title: "Dark Souls", link:"https://en.wikipedia.org/wiki/Dark_Souls_(video_game)"},
+    { id: 28, title: "Dark Souls II", link: "https://en.wikipedia.org/wiki/Dark_Souls_II"},
+    { id: 29, title: "Dark Souls III", link: "https://en.wikipedia.org/wiki/Dark_Souls_III"},
+    { id: 30, title: "Minecraft", link: "https://en.wikipedia.org/wiki/Minecraft"}
 ]
 
 app.get("/video-games", (req, res) => {
