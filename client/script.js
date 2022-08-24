@@ -1,9 +1,14 @@
+const searchResults = document.getElementById('searchEngine');
+const searchBar = document.getElementById('searchBar');
 
-    //const searchBar = event.target.searchBar.value;
-const searchButton = document.getElementById('searchButton');
-
-searchButton.addEventListener('click', () => {
-    fetch(`http://localhost:3000/movies`)
-    .then(response => response.json())
-    .then(data => h3.innerHTML = data)
+searchResults.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const searchQuery = searchBar.value;
+    fetch('http://localhost:3000/movies')
+    .then((res) => res.json())
+    .then((data) => data.forEach(obj => {
+        if ((obj.movie).includes(searchQuery)) {
+            console.log(obj);
+        }
+    }));
 })
