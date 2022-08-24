@@ -17,7 +17,7 @@
     font-family: ProductSans;
 }
 
-.searchBar {
+.barStyle {
     width: 300px;
     padding: 10px;
     margin: 15px;
@@ -26,7 +26,7 @@
     font-size: 15px;
 }
 
-.searchButton {
+.buttonStyle {
     margin: 10px;
     padding: 10px;
     font-size: 15px;
