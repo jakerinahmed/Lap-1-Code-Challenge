@@ -1,1 +1,0 @@
-# Lap-1-Code-Challenge
