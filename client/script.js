@@ -1,6 +1,6 @@
 const searchResults = document.getElementById('searchResults')
 const ul = document.querySelector('ul');
-const h1 = document.querySelector('h1');
+const notGoogleLogo = document.getElementById("notGoogle")
 
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
@@ -48,6 +48,6 @@ function createResult(list, object) {
     list.appendChild(newLi);
 }
 
-h1.onclick = () => {
+notGoogleLogo.onclick = () => {
     location.href = "./index.html";
 }
