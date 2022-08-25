@@ -29,14 +29,21 @@ Promise.all([
 function createResult(list, object) {
     const result = document.createElement('div');
     const title = document.createElement('a');
+    const linkDiv = document.createElement('div');
     const link = document.createElement('a');
+    const description = document.createElement('p');
     link.textContent = object.link;
     title.textContent = object.title;
+    description.textContent = object.description;
     link.setAttribute('href', object.link);
+    link.setAttribute('class', 'resultLink');
+    linkDiv.setAttribute('class', 'resultDiv');
     title.setAttribute('href', object.link);
     const newLi = document.createElement('li');
-    result.appendChild(link);
+    linkDiv.appendChild(link);
+    result.appendChild(linkDiv);
     result.appendChild(title);
+    result.appendChild(description);
     newLi.appendChild(result);
     list.appendChild(newLi);
 }
