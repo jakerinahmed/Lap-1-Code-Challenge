@@ -49,6 +49,17 @@ li {
     font-size: 20px;
 }
 
+.resultLink {
+    font-size: 16px;
+    color: rgb(146, 133, 133);
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.resultDiv {
+    padding-bottom: 5px;
+}
+
 .buttonStyle {
     margin: 10px;
     padding: 10px;
