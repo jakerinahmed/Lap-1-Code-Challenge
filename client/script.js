@@ -16,25 +16,30 @@ Promise.all([
 .then((data) => data.forEach(arr => {
     arr.forEach(obj => {
         if (((obj.title).toLowerCase()).includes(search.toLowerCase()) && !random) {
-            const newA = document.createElement('a');
-            newA.textContent = obj.title;
-            newA.setAttribute('href', obj.link);
-            const newLi = document.createElement('li');
-            newLi.appendChild(newA);
-            ul.appendChild(newLi);
+            createResult(ul, obj);
         } else {
             console.log(rand);
             if (random && obj.id === rand) {
-                const newA = document.createElement('a');
-                newA.textContent = obj.title;
-                newA.setAttribute('href', obj.link);
-                const newLi = document.createElement('li');
-                newLi.appendChild(newA);
-                ul.appendChild(newLi);
+                createResult(ul, obj);
             }
         }
     });
 }));
+
+function createResult(list, object) {
+    const result = document.createElement('div');
+    const title = document.createElement('a');
+    const link = document.createElement('a');
+    link.textContent = object.link;
+    title.textContent = object.title;
+    link.setAttribute('href', object.link);
+    title.setAttribute('href', object.link);
+    const newLi = document.createElement('li');
+    result.appendChild(link);
+    result.appendChild(title);
+    newLi.appendChild(result);
+    list.appendChild(newLi);
+}
 
 h1.onclick = () => {
     location.href = "./index.html";
